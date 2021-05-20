@@ -12,6 +12,6 @@ func (p PayPay) Pay(client entity.Client, item entity.Item) {
 	fmt.Println("paid by paypay", client, item)
 }
 
-func PayByPayPay() client.Pay {
+func ByPayPay() client.Pay {
 	return new(PayPay)
 }

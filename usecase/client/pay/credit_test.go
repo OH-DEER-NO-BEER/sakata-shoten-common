@@ -18,6 +18,6 @@ func TestPayByCredit(t *testing.T) {
 		Price: 100,
 		Time:  time.Now(),
 	}
-	payer := PayByCredit()
+	payer := ByCredit()
 	payer.Pay(client, item)
 }
