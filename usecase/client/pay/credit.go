@@ -9,7 +9,7 @@ import (
 type Credit struct{}
 
 func (p Credit) Pay(client entity.Client, item entity.Item) {
-	fmt.Println("paid by paypay", client, item)
+	fmt.Println("paid by credit", client, item)
 }
 
 func PayByCredit() client.Pay {
