@@ -1,8 +1,14 @@
 name: Test Ptoject
 on:
   push:
+    branches:
+      - develop
+      - main
     tags:
       - v*
+  pull_request:
+    branches:
+      - develop
       
 jobs:
   test:
