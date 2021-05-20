@@ -1,8 +1,14 @@
 name: Test Ptoject
 on:
   push:
+    branches:
+      - develop
+      - main
     tags:
       - v*
+  pull_request:
+    branches:
+      - develop
       
 jobs:
   test:
@@ -21,4 +27,4 @@ jobs:
       run:  go get -v -t -d ./...
       
     - name: Test code
-      run: go test -v .
+      run: go test -v ./...
