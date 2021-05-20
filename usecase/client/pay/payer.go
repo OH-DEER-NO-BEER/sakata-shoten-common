@@ -1,4 +1,4 @@
-package client
+package pay
 
 import "sakata-shoten-common/entity"
 
