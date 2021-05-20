@@ -3,15 +3,14 @@ package pay
 import (
 	"fmt"
 	"sakata-shoten-common/entity"
-	"sakata-shoten-common/usecase/client"
 )
 
 type Credit struct{}
 
 func (p Credit) Pay(client entity.Client, item entity.Item) {
-	fmt.Println("paid by paypay", client, item)
+	fmt.Println("paid by credit", client, item)
 }
 
-func PayByCredit() client.Pay {
+func ByCredit() Pay {
 	return new(Credit)
 }
